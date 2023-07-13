@@ -1,0 +1,409 @@
+/**
+Palette: https://scrimba.com/links/hometown-palette
+RED: #E63946
+LIGHT: #F1FAEE
+AQUA: #A8DADC
+LIGHT BLUE: #457B9D
+DARK BLUE: #1D3557
+
+Namibia
+
+Red Sand: #E5AD72
+Light green: #999d47
+olive green: #958A47
+dark green: #6F7033
+sky blue: #C9DDED
+ebony: #6B654C
+brown: #8B572D
+light brown: #AE8B71
+dark brown: #38251F
+
+Flag
+
+Red: #d10f33
+Yellow: #FFCE00
+Blue: #043281
+Green: #009543
+
+*/
+@font-face {
+    src: url("Tribeca.ttf");
+    font-family: african;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-image: url(images/Road.jpg);
+    /* background-size: cover; */
+    background-position: center top;
+    background-color: #AE8B71;
+}
+
+h1, h2 {
+    font-family: african;
+}
+
+#hero, #activ, #guide, #news, #counter, #nav, #nav-box {
+    box-shadow: 0 0 10px 2px #38251F;
+    border: 1px solid #38251F;
+}
+
+#mother {
+    margin: 0 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    /* justify-content: space-between; */
+    align-items: start;
+    opacity: 0.85;
+}
+
+#container {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 740px;
+    margin: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    /* background: #AE8B71; */  
+}
+
+#news {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 255px;
+    height: auto;
+    margin: 10px 20px;
+    padding: 0px 15px;
+    background-color: #E5AD72;
+    text-shadow: 0 0 1px #38251F;
+    opacity: 0.85;
+}
+
+#nav {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 255px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 20px;
+    padding: 0px 15px;
+    background-color: #E5AD72;
+    text-shadow: 0 0 10px #E5AD72;
+    opacity: 0.85;
+}
+
+#nav-box {
+    flex: 1 1 0;
+    width: 150px;
+    height: auto;
+    margin: 0px 5px;
+    margin-bottom: 33px;
+    padding: 0 0px;
+    text-align: start;
+    border: 10px solid #8B572D;
+    border-radius: 10px;
+
+    
+    
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    background-color: #AE8B71;
+}
+
+li a {
+    display: block;
+    color: #8B572D;
+    padding: 8px 16px;
+    text-decoration: none;
+    
+}
+
+li a:hover {
+    background-color: #8B572D;
+    color: #AE8B71;
+    transition: all 200ms;
+    text-shadow: 0 0 10px #38251F;
+}
+
+.current-link {
+    background-color: #8B572D;
+    color: #AE8B71;
+    text-shadow: 0 0 10px #38251F;
+}
+
+
+.news-column {
+    /* width: 220px; */
+    flex: 1 1 0;
+    height: auto;
+    border: 2px solid #38251F;
+    border-radius: 10px;
+    margin: 0px 5px;
+    margin-bottom: 33px;
+    padding: 0 10px;
+    box-shadow: 0 0 5px 2px #8B572D;
+    transition: all 0.2s;
+    
+}
+
+hr {
+    margin: 0 30px;
+    color: #38251F;
+}
+
+.main-boxes {
+    margin: 0 10px;
+}
+
+img {
+    width: 100px;
+}
+
+#hero {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(images/Giraffe2.png);
+    color: #AE8B71;
+    text-shadow: 0 0 10px #38251F;
+}
+
+#hero-kudu {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #AE8B71;
+    text-shadow: 0 0 10px #38251F;
+}
+
+#title{
+    background-color: #8B572D;
+    padding: 1px 15px 7px;
+    margin-bottom: 5px;
+    border: px solid #E5AD72;
+    border-radius: 10px;
+    opacity: 0.9;
+    box-shadow: 0px 0px 5px 3px #E5AD72;
+}
+
+#subtitle {
+    background-color: #8B572D;
+    padding: 5px 10px;
+    margin: 6px 154px 21px 154px;
+    border-radius: 10px;
+    opacity: 0.9;
+    box-shadow: 0px 0px 5px 3px #E5AD72
+}
+
+#activ {
+    height: auto;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    background: #E5AD72;
+    color: #38251F;
+    text-shadow: 0 0 1px #8B572D;
+}
+
+.activ {
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.img-rnd {
+    border: 0;
+    border-radius: 50px;
+    margin-top: 15px;
+    box-shadow: 0 0 5px 2px #8B572D;
+}
+
+.activ-column {
+    /* width: 220px; */
+    flex: 1 1 0;
+    height: 345px;
+    border: 2px solid #38251F;
+    border-radius: 10px;
+    margin: 0px 33px;
+    margin-bottom: 33px;
+    padding: 0 10px;
+    box-shadow: 0 0 5px 2px #8B572D;
+    transition: all 0.2s;
+}
+
+.activ-column:hover {
+    border: 2px solid #38251F;
+    margin-top: -5px;
+    margin-bottom: 28px;
+    box-shadow: 0 0 10px 8px #8B572D;
+    
+  
+}
+
+.header {
+    margin: 30px 10px;
+}
+
+#guide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    background-image: url(images/Namibia.flag.png);
+    background-size: cover;
+}
+
+#card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 440px;
+    height: 294px;
+    padding: 0px 20px 0px 20px;
+    color: #AE8B71;
+    border: 2px solid #38251F;
+    text-shadow: 0 0 10px #38251F;
+    border-radius: 10px;
+    background: #8B572D;
+    box-shadow: 0px 0px 5px 2px #38251F;
+    transition: all 0.2s;
+    
+}
+
+#card:hover {
+    
+    margin-top: -10px;
+    box-shadow: 0px 0px 10px 8px #38251F;
+    
+}    
+    
+
+#italic, #doit {
+    font-style: italic;
+}
+
+#doit {
+    font-weight: bold;
+}
+
+#img-card {
+    width: 180px;
+    height: 249px;
+    margin: 0px 20px 0px 0px;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 1px #38251F;
+}
+
+#card-text {
+    padding-top: 20px;
+    margin: 49px 1px 84px 0;
+}
+
+#counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 555px;
+    margin-top: 00px;
+    background-image: url(images/Kudu2.jpg);
+    background-position: right;
+    background-size: cover;
+}
+
+#counter-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 500px;
+    height: 350px;
+    margin: 170px 0px auto 0;
+    padding: 0px 20px 0px 20px;
+    color: #AE8B71;
+    border: 2px solid #38251F;
+    text-shadow: 0 0 10px #38251F;
+    border-radius: 10px;
+    background: #8B572D;
+    box-shadow: 0px 0px 5px 2px #38251F;
+    transition: all 0.2s;
+    
+}
+
+#counter-box:hover {
+    margin-top: 165px;
+    box-shadow: 0px 0px 10px 8px #38251F;
+}
+
+#counter-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 180px;
+    height: 290px;
+    margin: 0px 0px 0px 20px;
+    padding: 0px 10px;
+    background-color: #009543;
+    border: 2px solid #043281;
+    text-shadow: 0 0 10px #38251F;
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px 1px #d10f33;
+    color: #FFCE00;
+}
+
+#counter-text {
+    width: 250px;
+    margin: 49px 1px 84px 0;
+}
+
+#h-kudu {
+    margin: 10px 0 0px 0;    
+}
+
+#count-el, #catch-el {
+    margin: 10px 0 10px 0;
+    
+  
+}
+
+#run {
+    margin: 0 0 0 0;
+}
+
+#run:hover {
+    /* text-shadow: 0 0px 10px #38251F; */
+    color: #d10f33;
+    cursor: pointer;
+}
+
+.btn {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100px;
+    margin: 8px 0;
+    box-shadow: 0px 0px 5px 2px #38251F;
+    background-color: #043281;
+    border-color: #FFCE00;
+    color: #FFCE00;
+}
+
+#hero, #guide {
+    background-size: cover;
+}

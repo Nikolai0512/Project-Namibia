@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        
+        
+        <div id="mother">
+            
+            
+                <div class="main-boxes" id="news">
+                    <h1>NEWS</h1>
+                    <p>I will embed new things that I've learned on this site, creativly. <br>I'll keep you posted in this bar.</p>
+                    <div class="news-column">
+                        <h3>Juli 11 2023</h3>
+                        <h4>Multiple pages</h4>
+                        <p>I introduced multiple pages on this hompage instead of putting everything on one page. This would make it very hard to keep the overview and it's even more fancy having own pages for new elements.</p>
+                        <hr>
+                        <h4>Navigation Bar</h4>
+                        <p>What would we do with a Homepage that has multiple pages but no navigation bar? You nailed it. We would get lost. So there also is a navigation bar at the left hand side, now.</p>
+                        <hr>
+                        <h4>The Kudu Counter moved</h4>
+                        <p>The Kudu Counter got it's own page, since I've introduced multiple pages. It is the first element having an individual page. Congratulations to the Kudu Counter. Try to find it via the navigation bar.</p>
+                    </div>
+                    <div class="news-column">
+                        <h3>Juli 03 2023</h3>
+                        <p>You'll find a very fancy Kudu counter game below the flag.</p>
+                    </div>            
+                </div>
+            
+            
+            
+            <div class="main-boxes" id="container">
+            
+               
+             <div id="hero-kudu">
+                    <h1 id="title">Fancy Games</h1>
+                    <h3 id="subtitle">The Kudu Counter</h3>
+                </div>
+                
+               
+               
+                
+               
+               
+                 <!-- Counter -->
+                <div id="counter">
+                    <div id="counter-box">
+                                        
+                        <div id="counter-text">
+                            <h2>How To Play</h2>
+                            <p>
+                                Press the Button "Count" to count your individual Kudus crossing the Road.
+                            </p>
+                            <p>
+                                Press the Button "catch" to catch the crossed kudus and see what happens after you continue counting the Kudus and catch those, too.
+                            </p> 
+                        </div>
+                        
+                        <div id="counter-section">
+                            <h3 id="h-kudu">Kudus crossed</h3>
+                            <h1 id="count-el">0</h1>
+                            <button class="btn" onclick="countkudus()">count</button>
+                            <button class="btn" onclick="catchkudu()">catch</button>
+                            <h3 id="h-kudu">Kudus caught</h3>
+                            <h1 id="catch-el">0 </h1>
+                            <p id="run" onclick="runkudus()"> >> let them run << </p>
+                            
+                            <script src="index.js">
+                            </script>
+                            
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+                    <div class="main-boxes" id="nav">
+                        <h1>Pages</h1>
+                            <div id="nav-box">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="kudu.html" class="current-link">Kudu Counter</a></li>
+                                    <!-- <li><a>Kegel Calculator</a></li> -->
+                                </ul>
+                            </div>
+                    </div>            
+                </div> 
+            
+            
+               
+        </div>
+        
+        
+    </body>
+</html>
